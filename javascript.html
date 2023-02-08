@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        //all output possibility 
+        function innerhtml() {
+            document.getElementById('item1').innerHTML = "This is InnerHTML";
+        }
+        function Documentwrite() {
+            document.write("This is document Write");
+        }
+        function Windowalert() {
+            window.alert("This is Window Alert");
+        }
+        function consolelog() {
+            console.log("This is Console Log");
+        }
+
+
+        //add mathemetic calculation
+        function add(){
+            let a, b, c;
+            a = 40;
+            b = 59;
+            c = a + b;
+            document.getElementById('add').innerHTML= "Addition of 40 + 59 is = " + c;
+        }
+        function mul(){
+            let a, b, c;
+            a = 20;
+            b = 5;
+            c = a * b;
+            document.getElementById('add').innerHTML= "Multiplication of 20 * 5 is = " + c;
+        }
+        function sub(){
+            let a, b, c;
+            a = 40;
+            b = 20;
+            c = a - b;
+            document.getElementById('add').innerHTML= "Substraction of 40-20 is = " + c;
+        }
+        function div(){
+            let a, b, c;
+            a = 100;
+            b = 50;
+            c = a / b;
+            document.getElementById('add').innerHTML="Divison of 100/50 is = "  + c;
+        }
+        function mod(){
+            let a, b, c;
+            a = 100;
+            b = 50;
+            c = a % b;
+            document.getElementById('add').innerHTML="Module of 100%50 is = "  + c;
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- all output possibility  -->
+
+    <h1>This is Javascript</h1>
+    <button onclick="innerhtml()">Innerhtml</button>
+    <button onclick="Documentwrite()">Document Write</button>
+    <button onclick="Windowalert()">windows alert</button>
+    <button onclick="consolelog()">console.log</button>
+    <p id="item1"></p>
+    <p id="item2"></p>
+    <p id="item3"></p>
+    <p id="item4"></p>
+
+
+    <!-- add mathemetic calculation -->
+
+    <button onclick="add()">Addition</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="div()">Divison</button>
+    <button onclick="mod()">Module</button>
+    <p id="add"></p>
+    
+
+    <!-- Bulb On And Off -->
+    <button onclick="document.getElementById('image').src = 'on.jpg' ">Turn On Light</button>
+
+    <img src="off.jpg" id="image" alt="">
+
+    <button onclick="document.getElementById('image').src = 'off.jpg'">Turn Off Light</button>
+
+    
+</body>
+
+</html>
